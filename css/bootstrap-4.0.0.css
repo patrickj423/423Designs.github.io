@@ -8982,16 +8982,20 @@ html, body, table{
 	padding: 0;
 	height: 100%;
 	width: 100%;
+	overflow-x: hidden;
 }
 
-.intro{
-	height: 100%;
-	width: 100%;
-	margin: auto;
-	background: url(https://images.pexels.com/photos/707344/pexels-photo-707344.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-	display: table;
-	top: 0;
-	background-size: cover;
+.background{
+	font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    overflow: hidden;
+    height: calc(100vh - 100px);
+    margin-top: -100px;
+    padding-top: 100px;
+    position: relative;
+    width: 100%;
+    backface-visibility: hidden;
+    will-change: overflow;
 }
 
 .intro .inner{
@@ -9009,25 +9013,12 @@ html, body, table{
 	
 }
 
-
-
-/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
-@media screen and (min-width: 601px) {
-  .content h1{
-	font-family: 'Roboto Condensed', sans-serif;
-	font-weight: 700;
-	color: #323232;
-	text-shadow: 1px 1px 2.5vw #ffffff;
-	font-size: 5rem;	
-}  }
-
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 600px) {
-  .content h1{
-	font-family: 'Roboto Condensed', sans-serif;
-	font-weight: 700;
-	color: #323232;
-	text-shadow: 1px 1px 2.5vw #ffffff;
-	font-size: 2.5rem;	
-  }
+.watermark{
+	margin: 0;
+	position: absolute;
+	overflow: hidden;
+	height: 75vh;
+	width: auto;
+	bottom: 0;
+	right: 0;
 }
