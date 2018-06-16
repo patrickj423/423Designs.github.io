@@ -9013,6 +9013,7 @@ html, body, table{
 	
 }
 
+@media only screen and (min-width: 769px){
 .watermark{
 	margin: 0;
 	position: absolute;
@@ -9023,7 +9024,10 @@ html, body, table{
 	right: 0;
 }
 
-.img-thumbnail{
+
+.logo1{
+	display: block;
+	background-image: url("../assets/images/thumbnail_logo.png");
 	margin: 0;
 	padding: 5px;
 	position: absolute;
@@ -9033,5 +9037,59 @@ html, body, table{
 	top: 0;
 	left: 0;
 	border: none;
-	
+}
+}
+
+@media only screen and (max-width: 768px){
+.watermark{
+	margin: 0;
+	position: absolute;
+	overflow: hidden;
+	height: 75vh;
+	opacity: .25;
+	width: auto;
+	bottom: 0;
+	right: 0;
+}
+
+.logo1{
+	display: block;
+	background-image: url("../assets/images/thumbnail_logo.png");
+	margin: 0;
+	padding: 5px;
+	position: absolute;
+	overflow: hidden;
+	height: 20vw;
+	width: auto;
+	top: 0;
+	right: 0;
+	border: none;
+}
+}
+
+@media only screen and (max-height: 400px){
+.watermark{
+	margin: 0;
+	position: absolute;
+	overflow: hidden;
+	height: 75vh;
+	opacity: .25;
+	width: auto;
+	bottom: 0;
+	right: 0;
+}
+
+.logo1{
+	display: block;
+	background-image: url("../assets/images/thumbnail_logo.png");
+	margin: 0;
+	padding: 5px;
+	position: absolute;
+	overflow: hidden;
+	height: 20vh;
+	width: auto;
+	top: 0;
+	left: 0;
+	border: none;
+}
 }
